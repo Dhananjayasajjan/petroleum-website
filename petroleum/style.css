@@ -1,0 +1,162 @@
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Inter',sans-serif;
+      background:#f4f7fb;
+      color:#222;
+      scroll-behavior:smooth;
+    }
+
+    header{
+      height: 100vh;
+      background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/hero-crude.jpg') center/cover no-repeat;
+      color:#fff;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    header h1{font-size:3.4rem;margin-bottom:15px}
+    header p{max-width:800px;font-size:1.2rem}
+
+    .btn{
+      margin-top:30px;
+      padding:15px 35px;
+      background:#ff9800;
+      color:#fff;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:600;
+      transition:0.3s;
+    }
+    .btn:hover{background:#e68900;transform:translateY(-4px)}
+
+    nav{
+      position:sticky;
+      top:0;
+      background:#0b3c5d;
+      padding:15px;
+      text-align:center;
+      z-index:1000;
+    }
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:500;
+    }
+    nav a:hover{color:#ff9800}
+
+    section{
+      padding:80px 10%;
+      background:#fff;
+      margin:40px auto;
+      border-radius:18px;
+      max-width:1200px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.1);
+      opacity:0;
+      transform:translateY(40px);
+      transition:1s;
+    }
+    section.show{opacity:1;transform:translateY(0)}
+
+    section h2{font-size:2.5rem;color:#0b3c5d;margin-bottom:20px}
+    section p{font-size:1.05rem;line-height:1.8}
+
+    .image{
+      width:100%;
+      margin:25px 0;
+      border-radius:14px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:30px;
+    }
+
+    .card{
+      background:#f9fbff;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+    .card:hover{transform:translateY(-8px)}
+
+    footer{
+      background:#06293d;
+      color:#fff;
+      padding:40px;
+      text-align:center;
+    }
+  
+.dark{background:#121212;color:#eaeaea}
+.dark section{background:#1e1e1e}
+.dark nav{background:#000}
+.dark footer{background:#000}
+/*  */
+html {
+  scroll-behavior: smooth;
+}
+
+#extraction {
+  padding: 60px 40px;
+}
+
+.extraction-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Left content list */
+.extraction-menu {
+  position: sticky;
+  top: 120px;
+  background: #f4f7fb;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.extraction-menu h4 {
+  margin-bottom: 15px;
+  color: #0b3c5d;
+}
+
+.extraction-menu a {
+  display: block;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.extraction-menu a:hover {
+  background: #0b3c5d;
+  color: #fff;
+}
+
+/* Content area */
+.extraction-content img {
+  display: block;
+  margin: 30px auto 40px;
+  max-width: 520px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.extraction-content h3 {
+  margin-top: 50px;
+  color: #0b3c5d;
+}
